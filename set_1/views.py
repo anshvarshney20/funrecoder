@@ -133,5 +133,21 @@ def drop(request, pk):
 
 @login_required(login_url="login")
 def modify(request, pk):
+    context = {}
     update = posts.objects.get(id=pk)
+    if request.method == "POST":
+        try:
+            posts.objects.update(
+                full_name=request.POST.get("full_name"),
+                category=request.POST.get("category"),
+                season=request.POST.get("season"),
+                stream_duration=request.POST.get("stream_duration"),
+                episodes=request.POST.get("episodes"),
+                mode_category=request.POST.get("mode_category"),
+                streaming_platform=request.POST.get("streaming_platform"),
+                author=request.user
+            )
+        except:
+            context["message"] = "*Invalid details"
     return render(request, 'posts.html')
+    

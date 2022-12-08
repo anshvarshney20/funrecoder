@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r2r&lje4att1_o#p2v3zvv=uosw515m-fr9$jty+z4ii4_ag4j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://fun-recorder.up.railway.app"]
+ALLOWED_HOSTS = ["fun-recorder.up.railway.app"]
 
 
 # Application definition

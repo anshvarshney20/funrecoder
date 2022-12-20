@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r2r&lje4att1_o#p2v3zvv=uosw515m-fr9$jty+z4ii4_ag4j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["fun-recorder.up.railway.app"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -83,9 +83,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '7HRvrVTGmgxDmQ3OwMWf',
-        'HOST': 'containers-us-west-124.railway.app',
-        'PORT': '7634',
+        'PASSWORD': 'BGvbtd6XwqtNfw9ja04W',
+        'HOST': 'containers-us-west-171.railway.app',
+        'PORT': '7069',
     }
 }
 
